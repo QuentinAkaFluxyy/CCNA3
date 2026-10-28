@@ -1,0 +1,17 @@
+{
+  "questions": [
+    {
+      "id": "perso-001",
+      "topic": "OSPF",
+      "question": "Quelle commande IOS affiche les voisins OSPF ?",
+      "options": [
+        "show ip ospf neighbor",
+        "show ip route static",
+        "show vlan brief",
+        "show mac address-table"
+      ],
+      "correct": [0],
+      "explanation": "La commande affiche les adjacences OSPF."
+    }
+  ]
+}

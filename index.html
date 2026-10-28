@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1427">
+  <meta name="description" content="Entraînement CCNA 3 ENSA : QCM aléatoires, examens blancs, corrections et suivi de progression.">
+  <title>CCNA Lab — Entraînement ENSA v7</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="data/questions-source.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navigation principale">
+      <a href="#accueil" class="brand" id="brand-link" aria-label="CCNA Lab, accueil">
+        <span class="brand-mark">
+          <svg viewBox="0 0 42 42" aria-hidden="true"><path d="M12 10 29 20 12 31M12 10v21M29 20l-17 11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="4"/><circle cx="29" cy="20" r="4"/><circle cx="12" cy="31" r="4"/></svg>
+        </span>
+        <span><strong>CCNA<span class="brand-accent">LAB</span></strong><small>ENSA · v7</small></span>
+      </a>
+      <div class="nav-group-title">ESPACE DE TRAVAIL</div>
+      <nav class="nav-list" id="nav-list">
+        <button class="nav-link active" data-nav="home"><span class="nav-icon">⌂</span> Tableau de bord</button>
+        <button class="nav-link" data-nav="start"><span class="nav-icon">▦</span> Nouvel examen</button>
+        <button class="nav-link" data-nav="study"><span class="nav-icon">◇</span> Fiches d'association</button>
+        <button class="nav-link" data-nav="history"><span class="nav-icon">◷</span> Mes résultats</button>
+        <button class="nav-link" data-nav="import"><span class="nav-icon">⇧</span> Banque de questions</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="mini-info"><span class="online-dot"></span><span>100 % local · gratuit</span></div>
+        <p>Projet personnel non affilié à Cisco. Les corrigés proviennent du fichier HTML fourni.</p>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div class="breadcrumbs"><span>ESPACE D’ENTRAÎNEMENT</span><span class="sep">/</span><strong id="current-page-name">Vue d'ensemble</strong></div>
+        <div class="topbar-right"><span class="top-pill"><span class="online-dot"></span> Données sauvegardées sur cet appareil</span><button class="btn btn-outline btn-sm" id="top-new-exam">+ Nouvel examen</button></div>
+      </header>
+      <main class="content" id="view" tabindex="-1">
+        <div class="loading-screen"><div class="spinner"></div><h1>Préparation de ton espace CCNA…</h1></div>
+      </main>
+      <footer class="footer">CCNA Lab <span>·</span> Entraînement personnel <span>·</span> Questions issues du HTML transmis — corrections non vérifiées par Cisco</footer>
+    </div>
+  </div>
+  <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+</body>
+</html>
